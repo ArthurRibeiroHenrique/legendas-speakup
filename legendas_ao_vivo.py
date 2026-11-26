@@ -170,11 +170,11 @@ class Legendas:
         meio = tk.Frame(centro, bg=COR_FUNDO)
         meio.place(relx=0.5, rely=0.5, anchor="center", relwidth=1)
 
-        self.en_ant, self.en = self._cartao(
-            meio, "ENGLISH", "#3b82f6", "white", COR_EN_ANT, COR_EN)
-        tk.Frame(meio, height=24, bg=COR_FUNDO).pack()
         self.pt_ant, self.pt = self._cartao(
             meio, "PORTUGUÊS", COR_PT, "#1a1a1a", COR_PT_ANT, COR_PT)
+        tk.Frame(meio, height=24, bg=COR_FUNDO).pack()
+        self.en_ant, self.en = self._cartao(
+            meio, "ENGLISH", "#3b82f6", "white", COR_EN_ANT, COR_EN)
 
         self._aplicar_fontes()
 
